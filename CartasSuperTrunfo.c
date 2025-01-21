@@ -7,6 +7,38 @@
 //Teste larissa
 
 int main() {
+    char nomec[20];
+    int pontosT;
+    float pib, area, populacao;
+    char cod1;
+    int cod2;
+    printf("Digite o código da cidade: ");
+    scanf("%c %d",&cod1, &cod2);
+
+    printf("\nDigite o nome da cidade: ");
+    scanf("%s",&nomec);
+
+    printf("\nDigite a população: ");
+    scanf("%f",&populacao);
+
+    printf("\nDigite a área: ");
+    scanf("%f",&area);
+
+    printf("\nDigite o PIB: ");
+    scanf("%f",&pib);
+
+    printf("\nDigite o número de pontos turísticos: ");
+    scanf("%d",&pontosT);
+
+
+    printf("\n\nCódigo da cidade: %c%d\n", cod1, cod2);
+    printf("Nome: %s\n", nomec);
+    printf("População: %f\n", populacao);
+    printf("Área: %fKm²\n", area);
+    printf("PIB: %f\n", pib);
+    printf("Número de pontos turísticos %d\n", pontosT);
+
+
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
