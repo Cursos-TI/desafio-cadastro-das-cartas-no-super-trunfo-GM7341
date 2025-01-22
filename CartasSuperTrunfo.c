@@ -15,6 +15,8 @@ int main() {
     int cod2;
     float pibc, densidade;
 
+    double superpoder;
+
     //Entrada de dados
     printf("Digite o código da cidade (por exemplo, A01, A02, B01, B02): ");
     scanf("%c %d",&cod1, &cod2);
@@ -37,7 +39,7 @@ int main() {
     //Cálculos
     densidade = populacao / area;
     pibc = pib / populacao;
-
+    superpoder = populacao + area + pib + pontosT + pibc + densidade;
 
     //Saída de dados
     printf("\n\nCódigo da cidade: %c%d\n", cod1, cod2);
@@ -48,5 +50,6 @@ int main() {
     printf("Número de pontos turísticos %d\n", pontosT);
     printf("Densidade populacional: %.2f\n", densidade);
     printf("PIB per capita: %.4f\n", pibc);
+    printf("Super poder: %f", superpoder);
     return 0;
 }
