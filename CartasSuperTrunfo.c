@@ -76,13 +76,15 @@ int main() {
     // Saída de dados
     printf("\n\nCódigo da cidade: %c%d / %c%d\n", cod1, cod2, cod12, cod22);
     printf("Nome: %s / %s\n", nomec, nomec2);
-    printf("População: %.3f / %.3f\n", populacao, populacao2);
-    printf("Área: %.3f Km² / %.3f Km²\n", area, area2);
-    printf("PIB: %.3f / %.3f\n", pib, pib2);
+    printf("População: %f / %f\n", populacao, populacao2);
+    printf("Área: %f Km² / %f Km²\n", area, area2);
+    printf("PIB: %f / %f\n", pib, pib2);
     printf("Número de pontos turísticos: %d / %d\n", pontosT, pontosT2);
-    printf("Densidade populacional: %.2f / %.2f\n", densidade, densidade2);
-    printf("PIB per capita: %.4f / %.4f\n", pibc, pibc2);
+    printf("Densidade populacional: %f / %f\n", densidade, densidade2);
+    printf("PIB per capita: %f / %f\n", pibc, pibc2);
     printf("Super poder: %f / %f\n", superpoder, superpoder2);
+
+    //Comparação das cartas
     if(densidade > densidade2){
         printf("Na categoria densidade populacional %s venceu", nomec);
     }
