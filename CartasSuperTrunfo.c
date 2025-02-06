@@ -27,10 +27,10 @@ int main() {
 
     // Entrada de dados
     printf("Digite o código da cidade (por exemplo, A01, A02, B01, B02): ");
-    scanf(" %c %d", &cod1, &cod2); // Adicione um espaço antes de %c
+    scanf(" %c %d", &cod1, &cod2);
 
     printf("\nDigite o nome da cidade: ");
-    scanf("%s", nomec); // Remova o &
+    scanf("%s", nomec);
 
     printf("\nDigite a população: ");
     scanf("%f", &populacao);
@@ -46,10 +46,9 @@ int main() {
 
     // Entrada de dados 2
     printf("\nDigite o código da cidade (por exemplo, A01, A02, B01, B02): ");
-    scanf(" %c %d", &cod12, &cod22); // Adicione um espaço antes de %c
-
+    scanf(" %c %d", &cod12, &cod22);
     printf("\nDigite o nome da cidade: ");
-    scanf("%s", nomec2); // Remova o &
+    scanf("%s", nomec2);
 
     printf("\nDigite a população: ");
     scanf("%f", &populacao2);
@@ -76,13 +75,13 @@ int main() {
     // Saída de dados
     printf("\n\nCódigo da cidade: %c%d / %c%d\n", cod1, cod2, cod12, cod22);
     printf("Nome: %s / %s\n", nomec, nomec2);
-    printf("População: %f / %f\n", populacao, populacao2);
-    printf("Área: %f Km² / %f Km²\n", area, area2);
-    printf("PIB: %f / %f\n", pib, pib2);
+    printf("População: %.3f / %.3f\n", populacao, populacao2);
+    printf("Área: %.3f Km² / %.3f Km²\n", area, area2);
+    printf("PIB: %.3f / %.3f\n", pib, pib2);
     printf("Número de pontos turísticos: %d / %d\n", pontosT, pontosT2);
-    printf("Densidade populacional: %f / %f\n", densidade, densidade2);
-    printf("PIB per capita: %f / %f\n", pibc, pibc2);
-    printf("Super poder: %f / %f\n", superpoder, superpoder2);
+    printf("Densidade populacional: %.3f / %.3f\n", densidade, densidade2);
+    printf("PIB per capita: %.3f / %.3f\n", pibc, pibc2);
+    printf("Super poder: %.3f / %.3f\n", superpoder, superpoder2);
 
     //Comparação das cartas
     if(densidade > densidade2){
