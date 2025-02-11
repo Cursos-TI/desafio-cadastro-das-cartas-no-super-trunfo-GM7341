@@ -47,6 +47,7 @@ int main() {
     // Entrada de dados 2
     printf("\nDigite o código da cidade (por exemplo, A01, A02, B01, B02): ");
     scanf(" %c %d", &cod12, &cod22);
+
     printf("\nDigite o nome da cidade: ");
     scanf("%s", nomec2);
 
@@ -84,11 +85,41 @@ int main() {
     printf("Super poder: %.3f / %.3f\n", superpoder, superpoder2);
 
     //Comparação das cartas
+    if(populacao > populacao2){
+        printf("\nNa categoria população %s venceu", nomec);
+    }
+    else {
+        printf("\nNa categoria populacao %s venceu", nomec2);
+    }
+    if(area > area2){
+        printf("\nNa categoria área %s venceu",nomec);
+    }
+    else{
+        printf("\nNa categoria área %s venceu\n", nomec2);
+    }
+    if(pib > pib2){
+        printf("\nNa categoria PIB %s venceu",nomec);
+    }
+    else{
+        printf("\nNa categoria PIB %s venceu\n", nomec2);
+    }
+    if(pontosT > pontosT2){
+        printf("\nNa categoria pontos turísticos %s venceu",nomec);
+    }
+    else{
+        printf("\nNa categoria pontos turísticos %s venceu\n", nomec2);
+    }
     if(densidade > densidade2){
-        printf("Na categoria densidade populacional %s venceu", nomec);
+        printf("\nNa categoria densidade populacional %s venceu", nomec);
     }
     else {
         printf("\nNa categoria densidade populacional %s venceu", nomec2);
+    }
+    if(pibc > pibc2){
+        printf("\nNa categoria PIB per capita %s venceu",nomec);
+    }
+    else{
+        printf("\nNa categoria PIB per capita %s venceu\n", nomec2);
     }
     if(superpoder > superpoder2){
         printf("\nNa categoria geral %s venceu",nomec);
